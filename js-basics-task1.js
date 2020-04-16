@@ -1,8 +1,8 @@
 const yourName = 'Mihai Jicu';
 const birthDate = new Date('1989-10-15');
-let num1 = 3;
-num2 = num1;
-num3 = num2;
+let num1 = 3,
+num2 = num1,
+num3 = num2,
 
 
 console.log(`Hello! This program has been written by ${yourName}`);
