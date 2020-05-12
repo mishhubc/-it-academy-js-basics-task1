@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .table {
+        width: 800px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .title-row {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        width: 100%;
+      }
+
+      .title-row__cell {
+        background: #999999;
+        flex-grow: 1;
+        width: 25%;
+      }
+
+      .rows-list {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      .row {
+        display: flex;
+        height: 48px;
+        width: 100%;
+      }
+
+      .row__cell {
+        padding: 0 4px;
+        width: 25%;
+        height: 48px;
+        flex-shrink: 0;
+      }
+
+      .user-form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="search" type="search"></input>
+<input type="checkbox" id="female">Only females
+  <input type="checkbox" id="male">Only males
+    <div class="table">
+      <div class="title-row">
+        <div class="title-row__cell">Name</div>
+        <div class="title-row__cell">Last name</div>
+        <div class="title-row__cell">Sex</div>
+        <div class="title-row__cell">BMI</div>
+      </div>
+      <div id="rows" class="rows-list">
+      </div>
+    </div>
+    <form id="user-form" class="user-form">
+      <label>
+        Name:
+        <input name="name" type="text" />
+      </label>
+      <label>
+        Last name:
+        <input name="lastName" type="text" />
+      </label>
+      <label id="sex-form">
+        Sex:
+        <!-- <input name="sex" type="text" /> -->
+        <input  name="sex"  type="radio" value="female" >Female
+        <input name="sex"  type="radio" value="male">Male
+      </label>
+    
+      <label>
+        Height:
+        <input name="height" type="text" />
+      </label>
+      <label>
+        Weight:
+        <input name="weight" type="text" />
+      </label>
+      <button type="submit">
+        Add User
+      </button>
+    </form>
+    <script src="./js-lesson7.js"></script>
+    <script src="./js-lesson7-task.js"></script>
+  </body>
+</html>
